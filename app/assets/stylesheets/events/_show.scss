@@ -1,0 +1,32 @@
+.event {
+  padding-bottom: 30px;
+
+  h1, h2, p, .is-this-good {
+    text-align: center;
+  }
+
+  h2 {
+    text-transform: uppercase;
+
+    small {
+      font-size: $font-size-body;
+      font-weight: 200;
+      display: block;
+      text-transform: none;
+    }
+  }
+}
+
+.rainbows {
+  background: $colour-gradient-33;
+  background: linear-gradient(to right, $colour-gradient-0 0%, $colour-gradient-33 33%, $colour-gradient-66 66%, $colour-gradient-100 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+.emoji {
+  font-size: $font-size-emoji;
+  font-weight: normal;
+}

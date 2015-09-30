@@ -38,6 +38,9 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.3)
+    autoprefixer-rails (6.0.3)
+      execjs
+      json
     builder (3.2.2)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
@@ -139,6 +142,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autoprefixer-rails!
   foreman!
   heroku-deflater (~> 0.5)!
   jbuilder (~> 2.3)!

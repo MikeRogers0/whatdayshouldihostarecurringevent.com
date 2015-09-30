@@ -19,6 +19,7 @@ source 'https://rubygems.org' do
   gem 'jbuilder', '~> 2.3'
 
   # CSS / SCSS
+  gem 'autoprefixer-rails'
   gem 'sass-rails', '~> 5.0'
 
   # JS

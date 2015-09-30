@@ -1,0 +1,27 @@
+.btn-group {
+  text-align: center;
+
+  > .btn {
+    margin-left: 20px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.btn {
+  display: inline-block;
+  width: 150px;
+  height: 140px;
+  border-radius: 100%;
+  background: $color-negative;
+  text-decoration: none;
+  padding-top: 10px;
+
+  position: relative;
+
+  &:hover {
+    background: $color-affirmative;
+    background: linear-gradient(to right, $colour-gradient-0 0%, $colour-gradient-33 33%, $colour-gradient-66 66%, $colour-gradient-100 100%);
+  }
+}

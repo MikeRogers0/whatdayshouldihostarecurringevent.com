@@ -1,4 +1,7 @@
 /* Colours */
+$color-negative: #f5f5f5;
+$color-affirmative: #00ffc8;
+
 $colour-gradient-0: #3bbdff;
 $colour-gradient-33: #00f6ff;
 $colour-gradient-66: #00ffc8;
@@ -13,3 +16,4 @@ $font-size-base: 16;
 $font-size-body: (16 / $font-size-base)+rem;
 $font-size-h1: (60 / $font-size-base)+rem;
 $font-size-h2: (75 / $font-size-base)+rem;
+$font-size-emoji: (75 / $font-size-base)+rem;
