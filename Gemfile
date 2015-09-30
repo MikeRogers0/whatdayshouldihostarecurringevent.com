@@ -2,6 +2,7 @@ ruby '2.2.2'
 
 source 'https://rails-assets.org' do
   # Use to load in bower.io JS/CSS bits.
+  gem 'rails-assets-normalize-css', '~> 3.0'
 end
 
 source 'https://rubygems.org' do

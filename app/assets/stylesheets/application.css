@@ -10,6 +10,9 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
+ *= require base/import_fonts
+ *= require normalize-css
+ *
+ * Now import our stuff
+ *= require styles
  */

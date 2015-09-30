@@ -1,0 +1,15 @@
+/* Colours */
+$colour-gradient-0: #3bbdff;
+$colour-gradient-33: #00f6ff;
+$colour-gradient-66: #00ffc8;
+$colour-gradient-100: #e1ff00;
+
+$colour-body: #2b2b2b;
+
+/* Fonts */
+$font-family: 'Open Sans', sans-serif;
+
+$font-size-base: 16;
+$font-size-body: (16 / $font-size-base)+rem;
+$font-size-h1: (60 / $font-size-base)+rem;
+$font-size-h2: (75 / $font-size-base)+rem;
