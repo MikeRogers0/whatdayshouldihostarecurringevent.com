@@ -4,17 +4,17 @@
   <h2>
     <small>How about every</small>
     <span class="emoji">&#128186;</span>
-      <span class="rainbows">Third Thursday</span>
+    <span class="rainbows"><%= @ordinal %> <%= @day %></span>
     <span class="emoji">&#127881;</span>
   </h2>
 
-  <p>There are 23 other meets on this day. <a href="#">See what they are</a></p>
+  <p class="scope-out-the-competition">There are 23 other meets on this day. <a href="#">See what they are</a></p>
 
   <div class="is-this-good btn-group">
-    <a href="#" class="btn btn-try-again">
+    <%= link_to root_path, class: "btn btn-try-again" do %>
       <div class="emoji">&#128078;</div>
       Ugh&hellip;
-    </a>
+    <% end %>
     <a href="#" class="btn btn-this-is-fine">
       <div class="emoji">&#128076;</div>
       Cool!
