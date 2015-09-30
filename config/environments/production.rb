@@ -76,4 +76,9 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # Make *_url point to our site.
+  config.action_controller.default_url_options = {
+    host: "whatdayshouldihostarecurringevent.com", protocol: "https"
+  }
 end
