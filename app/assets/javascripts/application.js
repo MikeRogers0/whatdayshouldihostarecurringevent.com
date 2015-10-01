@@ -11,4 +11,4 @@
 // about supported directives.
 //
 //= require turbolinks
-//= require_tree .
+//= require events/show

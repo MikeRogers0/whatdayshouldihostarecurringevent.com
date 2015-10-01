@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-    redirect_to event_interval_path ordinal: random_ordinal, day: random_day
+    return redirect_to event_interval_path(ordinal: random_ordinal, day: random_day), status: 303
   end
 
   private
