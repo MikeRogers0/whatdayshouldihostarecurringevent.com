@@ -4,9 +4,6 @@ class ConflictingEvents
     @country_code = args[:country_code] || "GB"
     @event_date = args[:event_date] || (Date.today.beginning_of_month + 1.month)
     @nearby_events = nil
-
-    @city =  "London"
-    @country_code = "GB"
   end
 
   def count
