@@ -9,8 +9,9 @@ source 'https://rubygems.org' do
   # Rails
   gem 'rails', '~> 4.2'
 
-  # App Server
+  # App Server & caching layers
   gem 'unicorn', '~> 4.9', require: false
+  gem 'dalli'
 
   # Database - to be removed.
   gem 'pg', '~> 0.18'
