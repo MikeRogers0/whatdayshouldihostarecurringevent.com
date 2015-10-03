@@ -15,13 +15,13 @@ class HomeController < ApplicationController
 
   def random_day
     [
+      "sunday",
       "monday",
       "tuesday",
       "wednesday",
       "thursday",
       "friday",
-      "saturday",
-      "sunday"
+      "saturday"
     ].sample
   end
 end

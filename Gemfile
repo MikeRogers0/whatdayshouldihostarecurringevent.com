@@ -12,8 +12,12 @@ source 'https://rubygems.org' do
   # App Server
   gem 'unicorn', '~> 4.9', require: false
 
-  # Database
+  # Database - to be removed.
   gem 'pg', '~> 0.18'
+
+  # APIs for returning how many events are on that day.
+  gem 'geocoder'
+  gem 'meetup_client'
   
   # JSON Response
   gem 'jbuilder', '~> 2.3'

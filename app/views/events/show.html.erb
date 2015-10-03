@@ -6,7 +6,7 @@
     <span class="emoji">&#127881;</span>
   </h2>
 
-  <p class="scope-out-the-competition">There are 23 other meets on this day. <a href="#">See what they are</a></p>
+  <p class="scope-out-the-competition">There are <%= @conflicting_events.count %> other meets on this day in <%= @conflicting_events.city %>. <%= link_to "See what they are", @conflicting_events.url, target: "_blank" %></p>
 
   <div class="is-this-good btn-group">
     <%= link_to root_path, class: "btn btn-try-again" do %>
