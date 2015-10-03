@@ -24,5 +24,10 @@ module WhatDayShouldIHostARecurringEvent
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    # Use memcache if we have it.
+    if ENV["MEMCACHEDCLOUD_SERVERS"]
+      config.cache_store = :dalli_store, ENV["MEMCACHEDCLOUD_SERVERS"].split(','), { username: ENV["MEMCACHEDCLOUD_USERNAME"], password: ENV["MEMCACHEDCLOUD_PASSWORD"] }
+    end
   end
 end
