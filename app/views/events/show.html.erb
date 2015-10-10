@@ -1,9 +1,9 @@
 <div class="event">
   <h2>
     <small>How about every</small>
-    <span class="emoji">&#128186;</span>
+    <span class="emoji"><%= random_emoji_hexcode %></span>
     <span class="rainbows"><%= @ordinal %> <%= @day %></span>
-    <span class="emoji">&#127881;</span>
+    <span class="emoji"><%= random_emoji_hexcode %></span>
   </h2>
 
   <p class="scope-out-the-competition">There are <%= @conflicting_events.count %> other meets on this day in <%= @conflicting_events.city %>. <%= link_to "See what they are", @conflicting_events.url, target: "_blank" %></p>

@@ -1,4 +1,4 @@
-ruby '2.2.2'
+ruby '2.2.3'
 
 source 'https://rails-assets.org' do
   # Use to load in bower.io JS/CSS bits.
