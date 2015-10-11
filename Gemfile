@@ -17,7 +17,7 @@ source 'https://rubygems.org' do
   gem 'pg', '~> 0.18'
 
   # APIs for returning how many events are on that day.
-  gem 'geocoder'
+  gem 'geoip2'
   gem 'meetup_client'
   
   # JSON Response
