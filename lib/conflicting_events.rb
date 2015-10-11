@@ -1,7 +1,7 @@
 class ConflictingEvents
   def initialize(args = {})
-    @city = args[:city] || "London"
-    @country_code = args[:country_code] || "GB"
+    @city = args[:city].present? ? args[:city] : "London"
+    @country_code = args[:country_code].present? && args[:country_code] != "RD" ? args[:country_code] : "GB"
     @event_date = args[:event_date] || (Date.today.beginning_of_month + 1.month)
     @nearby_events = nil
   end

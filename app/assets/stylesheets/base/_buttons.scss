@@ -12,16 +12,17 @@
 .btn {
   display: inline-block;
   width: 195px;
-  height: 182px;
+  height: (195 - 35)+px;
   border-radius: 100%;
   background: $color-negative;
   text-decoration: none;
   padding-top: 13px;
+  padding-top: 35px; 
 
   position: relative;
 
   &:hover {
     background: $color-affirmative;
-    background: linear-gradient(to right, colour-btn-gradient-0 0%, $colour-btn-gradient-100 100%);
+    background: linear-gradient(to right, $colour-btn-gradient-0 0%, $colour-btn-gradient-100 100%);
   }
 }
