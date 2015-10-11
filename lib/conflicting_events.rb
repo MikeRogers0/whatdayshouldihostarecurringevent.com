@@ -8,7 +8,11 @@ class ConflictingEvents
 
   def count
     Rails.cache.fetch("/#{@country_code}/#{@city}/#{@event_date.beginning_of_day.to_s}/event_count", expires_in: 24.hours) do
-      nearby_events["meta"]["total_count"]
+      if nearby_events["meta"].present?
+        nearby_events["meta"]["total_count"]
+      else
+        0
+      end
     end
   end
 
