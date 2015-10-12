@@ -13,6 +13,9 @@ source 'https://rubygems.org' do
   gem 'unicorn', '~> 4.9', require: false
   gem 'dalli'
 
+  # Error logging
+  gem 'raygun4ruby', '~> 1.1'
+
   # Database - to be removed.
   gem 'pg', '~> 0.18'
 
